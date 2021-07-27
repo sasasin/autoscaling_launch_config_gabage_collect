@@ -7,25 +7,25 @@ Gabage Collect shell scripts for AWS EC2 AutoScaling Launch Configuration
 Listup all EC2 AutoScaling Launch Configurations.
 
 ```
-$ ./autoscaling_all_launch_conf.sh > all_items.txt
+$ ./autoscaling_all_launch_conf.sh > ~/all_items.txt
 ```
 
 Listup running EC2 AutoScaling Launch Configurations.
 
 ```
-$ ./autoscaling_running_launch_conf.sh > running_items.sh
+$ ./autoscaling_running_launch_conf.sh > ~/running_items.txt
 ```
 
 Listup unused EC2 AutoScaling Launch Configurations.
 
 ```
-$ ./autoscaling_list_unused_launch_conf.sh all_items.sh running_items.sh > unused_items.txt
+$ ./autoscaling_list_unused_launch_conf.sh ~/all_items.txt ~/running_items.txt > ~/unused_items.txt
 ```
 
 Deregister EC2 AutoScaling Launch Configurations.
 
 ```
-$ ./autoscaling_delete_launch_conf.sh unused_items.sh
+$ ./autoscaling_delete_launch_conf.sh ~/unused_items.txt
 ```
 
 # Pre require
